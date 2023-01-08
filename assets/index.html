@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <title>Dice Roller</title>
+      <link rel="icon" href="/favicon.ico" sizes="any">
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="stylesheet" href="/style.css" >
+  </head>
+  <script src="wasm_exec.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="content" class="content">
+      <pre id="output"></pre>
+    </div>
+    <div class="footer">
+      <label>Sides: <input id="sides" inputmode="numeric" pattern="[0-9]*" type="text" value="6"/></label>
+      <label>Amount: <input id="amount" inputmode="numeric" pattern="[0-9]*" type="text" value="1"/></label>
+      <input id="roll" type="button" value="Roll" onclick="roll(sides.value, amount.value);"/>
+      <input id="clear" type="button" value="Clear" onclick="if(confirm('Are you sure?')) clearOutput();"/>
+    </div>
+  </div>
+</body>
+
+</html>

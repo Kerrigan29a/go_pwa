@@ -1,0 +1,14 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Editors and IDEs
+.vscode
+
+# Mac files
+.DS_Store
+
+# Build folder
+build

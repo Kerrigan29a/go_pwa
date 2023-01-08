@@ -22,8 +22,9 @@ func restoreOutput() {
 	js.Global().Get("console").Call("log", value)
 	if value == "<undefined>" || value == "" || value == "<null>" {
 		/*
-			Banner from https://manytools.org/hacker-tools/ascii-banner/ with Bloody font
-		*/
+		 * Banner from https://manytools.org/hacker-tools/ascii-banner/
+		 * with Bloody font
+		 */
 		value = `
 <span>  ▓█████▄  ██▓ ▄████▄  ▓█████                        </span>
 <span>  ▒██▀ ██▌▓██▒▒██▀ ▀█  ▓█   ▀                        </span>

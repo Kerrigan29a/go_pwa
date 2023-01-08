@@ -11,13 +11,12 @@ self.addEventListener('install', (event) => {
     console.log('[Service Worker] Install');
     event.waitUntil(
         caches.open(cacheName).then((cache) => cache.addAll([
-            '/',
-            '/app.wasm',
-            '/index.html',
-            '/main.js',
-            '/manifest.json',
-            '/style.css',
-            '/wasm_exec.js',
+            'app.wasm',
+            'index.html',
+            'main.js',
+            'manifest.json',
+            'style.css',
+            'wasm_exec.js',
         ])),
     );
 });

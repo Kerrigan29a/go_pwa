@@ -10,9 +10,5 @@
 # Mac files
 .DS_Store
 
-# gh-pages {{{
-
 # Build folder 
 build
-
-# }}}
